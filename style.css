@@ -13,6 +13,12 @@ body {
   overflow-x: hidden;
 }
 
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.25;
+  margin-bottom: 24px;
+}
+
 .row {
   width: 100%;
   max-width: 1280px;
@@ -76,7 +82,8 @@ nav {
 
 .nav__link--anchor {
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 600;
+    color: #242424;
 }
 
 .nav__link--anchor--primary {
@@ -191,6 +198,34 @@ header .row {
   align-items: center;
   justify-content: space-between;
 }
+
+.header__text {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.header__figure {
+  width: 60%;
+}
+
+.header__image {
+    width: 100%;
+}
+
+.header__para {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+.header__bar {
+}
+
+.header__input {
+    border-radius: 32px;
+}
+
 
 /* 
 
