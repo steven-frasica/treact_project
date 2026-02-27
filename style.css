@@ -77,13 +77,13 @@ nav {
 }
 
 .nav__link {
-    margin: 1.5rem;
+  margin: 1.5rem;
 }
 
 .nav__link--anchor {
-    text-decoration: none;
-    font-weight: 600;
-    color: #242424;
+  text-decoration: none;
+  font-weight: 600;
+  color: #242424;
 }
 
 .nav__link--anchor--primary {
@@ -159,7 +159,7 @@ nav {
 .modal__link--primary {
   color: #f7fafc;
   padding: 12px 32px;
-  background: #6415ff;
+  background-color: #6415ff;
   border-radius: 500px;
   border: none;
 }
@@ -184,7 +184,6 @@ nav {
 .nav__logo-name {
   font-size: 1.5rem;
   font-weight: 900;
-  margin-left:;
 }
 
 /* 
@@ -200,9 +199,11 @@ header .row {
 }
 
 .header__text {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 40%;
+  margin-right: auto;
 }
 
 .header__figure {
@@ -210,7 +211,7 @@ header .row {
 }
 
 .header__image {
-    width: 100%;
+  width: 100%;
 }
 
 .header__para {
@@ -220,12 +221,43 @@ header .row {
 }
 
 .header__bar {
+  max-width: 15rem;
+  /* margin-right: auto; */
+  position: relative;
+
 }
 
 .header__input {
-    border-radius: 32px;
+  border-radius: 32px;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-right: 1.25rem;
+  padding-left: 2rem;
+  width: 200%;
+  max-width: 600px;
+  line-height: 1.75;
+  border-style: solid;
+  border-color: rgb(160 175 192);
 }
 
+.header__button {
+  background-color: #6415ff;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border-radius: 500px;
+  border: none;
+  z-index: 2;
+  display: flex;
+  position: absolute;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 10rem;
+  line-height: 1.5;
+  left: 308px;
+  top: -3px;
+}
 
 /* 
 
