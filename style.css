@@ -22,7 +22,7 @@ h1 {
 h4 {
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: .20cap;
+  letter-spacing: 0.2cap;
   margin-bottom: 1rem;
 }
 
@@ -233,7 +233,6 @@ header .row {
   max-width: 15rem;
   /* margin-right: auto; */
   position: relative;
-
 }
 
 .header__input {
@@ -300,6 +299,7 @@ FEATURES ↓
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .features__header {
@@ -307,6 +307,69 @@ FEATURES ↓
   font-weight: 900;
 }
 
+.features__para {
+  color: #7c8ba1;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  max-width: 36rem;
+  text-align: center;
+}
+
+.features__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+
+.feature {
+  width: calc(100%/3);
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 18rem;
+  padding: 2rem 0.5rem;
+  justify-content: space-between;
+}
+
+.feature__figure {
+  border: 1px solid #e2e8f0;
+  border-radius: 9999px;
+  flex-shrink: 0;
+  padding: 1.25rem;
+  text-align: center;
+  height: 30%;
+  margin-right: 20px;
+}
+
+.feature__icon {
+  margin-top: 4px;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.feature__span {
+  margin-top: 0.5rem;
+  text-align: left;
+}
+
+.feature__span--label {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.025rem;
+}
+
+.feature__span--para {
+  font-weight: 500;
+  line-height: 2;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  color: #7c8ba1;
+}
 /* 
 
 QUALITY WORK ↓
