@@ -441,19 +441,17 @@ STEPS ↓
 
 #steps .row {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   align-items: center;
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
 
-/* .steps__h2 {
-} */
-
 .steps__container {
   display: flex;
   flex-direction: column;
   align-self: flex-start;
+  margin-left: 4rem;
 }
 
 .steps__figure {
