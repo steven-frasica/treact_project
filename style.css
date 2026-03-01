@@ -325,11 +325,9 @@ FEATURES ↓
 
 .feature {
   width: calc(100%/3);
-  margin-left: 20px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  max-width: 18rem;
   padding: 2rem 0.5rem;
   justify-content: space-between;
 }
@@ -352,6 +350,7 @@ FEATURES ↓
 
 .feature__span {
   margin-top: 0.5rem;
+  margin-left: 1rem;
   text-align: left;
 }
 
