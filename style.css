@@ -443,6 +443,12 @@ STEPS ↓
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.steps__h2 {
+  margin-top: 1rem;
 }
 
 .steps__container {
@@ -455,6 +461,11 @@ STEPS ↓
   width: 50%;
   flex-shrink: 0;
   position: relative;
+}
+
+.steps__image {
+  height: auto;
+  max-width: 100%;
 }
 
 .steps__list {
