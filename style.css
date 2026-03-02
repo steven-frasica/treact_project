@@ -601,6 +601,43 @@ PRICING ↓
   align-items: center;
 }
 
+.pricing__para {
+  color: #7c8ba1;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  max-width: 36rem;
+  text-align: center;
+}
+
+.pricing__plans {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pricing__plan {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(43, 89, 149);
+  border-radius: 0.5rem;
+
+}
+
+.plan__type {
+  display: flex;
+  flex-direction: column;
+}
+
+.plan__features--list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ***** TO DO ***** */
+/* margin-top of pricing plans, margin-right? of pricing plan, align items center, pretty much entire plan column, colors, font sizes, button design, individualized text */
+
+
+
 /* 
 
 TESTIMONIALS ↓
