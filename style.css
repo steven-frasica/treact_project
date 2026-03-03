@@ -612,20 +612,151 @@ PRICING ↓
 
 .pricing__plans {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  /* align-items: stretch; */
+  flex: 1 1 0;
 }
 
 .pricing__plan {
   display: flex;
   flex-direction: column;
-  border: 1px solid rgb(43, 89, 149);
+  text-align: center;
+  /* border: 1px solid #e2e8f0; */
   border-radius: 0.5rem;
+  margin-right: 2rem;
+  /* made the columns equal width */
+  min-width: 0;
+  margin-top: 4rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+  position: relative;
+  flex: 1 1 0;
+  box-shadow:
+    0 1px 3px 0 rgba(0, 0, 0, 0.1),
+    0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
 
+.pricing__plan--business {
+  background: linear-gradient(135deg, #4c51bf 0%, #667eea 100%);
+}
+
+
+
+.plan__highlight {
+  position: absolute;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 0.5rem;
+}
+
+.plan__highlight--personal {
+  background: linear-gradient(
+    115deg,
+    rgb(56, 178, 172) 0%,
+    rgb(129, 230, 217) 100%
+  );
+}
+
+.plan__highlight--enterprise {
+  background: linear-gradient(115deg, #f56565 0%, #feb2b2 100%)
 }
 
 .plan__type {
   display: flex;
   flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+  line-height: 1.625rem;
+  box-sizing: border-box;
+}
+
+.plan__name {
+  color: #1a202c;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.plan__name--business {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.plan__price {
+  color: rgb(26 32 44);
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.plan__price--business {
+  color: white;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+
+.plan__monthly {
+  color: #a0aec0;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.plan__monthly--business {
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.plan__features {
+  display: flex;
+  flex-direction: column;
+  border-color: #e2e8f0;
+  border-style: solid;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  padding: 3rem;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  flex-wrap: nowrap;
+}
+
+.plan__features--business {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  border-color: #e2e8f0;
+  border-style: solid;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  padding: 3rem;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  flex-wrap: nowrap;
+}
+
+.plan__features--title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  white-space: nowrap; /* keep the title on a single line */
+  display: inline-block; /* respect the nowrap and its intrinsic width */
+}
+
+.plan__features--title--business {
+  color: white;
 }
 
 .plan__features--list {
@@ -633,10 +764,56 @@ PRICING ↓
   flex-direction: column;
 }
 
+.plan__feature {
+  color: #718096;
+  font-weight: 500;
+  margin-top: 1.25rem;
+}
+
+.plan__feature--business {
+  color: white;
+  font-weight: 500;
+  margin-top: 1.25rem;
+}
+
+.plan__buy {
+  display: flex;
+  padding: 2rem 3rem;
+}
+
+.plan__button {
+  width: 100%;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: rgb(247 250 252);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  padding: 1.25rem 5.25rem;
+  border: none;
+  white-space: nowrap;
+}
+
+.plan__button--personal {
+  background: linear-gradient(
+    115deg,
+    rgb(56, 178, 172) 0%,
+    rgb(129, 230, 217) 100%
+  );
+}
+
+.plan__button--business {
+  background: white;
+  color: #6415ff;
+}
+
+.plan__button--enterprise {
+  background: linear-gradient(115deg, #f56565 0%, #feb2b2 100%);
+}
+
 /* ***** TO DO ***** */
 /* margin-top of pricing plans, margin-right? of pricing plan, align items center, pretty much entire plan column, colors, font sizes, button design, individualized text */
-
-
 
 /* 
 
