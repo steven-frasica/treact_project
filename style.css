@@ -825,6 +825,57 @@ TESTIMONIALS ↓
   display: flex;
 }
 
+.testimonials__figure {
+  width: 50%;
+  flex-shrink: 0;
+  position: relative;
+  margin-top: 3rem;
+}
+
+.testimonials__image {
+  height: auto;
+  max-width: 100%;
+}
+
+.testimonials__container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 4rem;
+}
+
+.testimonials__header {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial__rating {
+  display: flex;
+  width: 50%;
+  flex-shrink: 0;
+}
+
+.testimonial__stars {
+  width: 40%;
+  min-width: 40%;
+  height: auto;
+}
+
+.testimonials__para {
+  color: #7c8ba1;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  max-width: 36rem;
+  text-align: left;
+  line-height: 1.625;
+}
+
 /* 
 
 START / CALL TO ACTION ↓
