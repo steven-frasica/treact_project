@@ -841,12 +841,14 @@ TESTIMONIALS ↓
   display: flex;
   flex-direction: column;
   margin-left: 4rem;
+  justify-content: space-between;
 }
 
 .testimonials__header {
   display: flex;
   flex-direction: column;
   align-self: flex-start;
+  margin-top: -3.5rem;
 }
 
 .testimonial {
@@ -857,7 +859,9 @@ TESTIMONIALS ↓
 .testimonial__rating {
   display: flex;
   width: 50%;
+  min-width: 50%;
   flex-shrink: 0;
+  margin-bottom: -3rem;
 }
 
 .testimonial__stars {
@@ -874,6 +878,49 @@ TESTIMONIALS ↓
   max-width: 36rem;
   text-align: left;
   line-height: 1.625;
+}
+
+.testimonial__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.testimonial__review {
+  font-weight: 500;
+  line-height: 1.625;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #4a5568;
+}
+
+.testimonial__user {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial__user--figure {
+  margin-top: 2rem;
+}
+
+.testimonial__user--image {
+  display: block;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+
+.testimonial__user--details {
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+}
+
+.testimonial__user--name {
+
+}
+
+.testimonial__user--title {
+
 }
 
 /* 
