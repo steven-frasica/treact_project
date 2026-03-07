@@ -935,7 +935,69 @@ START / CALL TO ACTION ↓
 #start .row {
   position: relative;
   overflow: hidden;
+  
 }
+
+.start__container {
+  background-color: #6415ff;
+  display: flex;
+  border-radius: 0.5rem;
+  align-items: center;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  padding-right: 6rem;
+  padding-left: 6rem;
+  /* add min-height for more vertical space, responsive with vh */
+  min-height: 38vh;
+}
+
+.start__text {
+  color: #f7fafc;
+  font-size: 1.875rem;
+  font-weight: 700;
+  width: 50%;
+  margin-left: 3rem;
+  text-align: left;
+}
+
+.start__buttons__container {
+  width: 50%;
+  text-align: center;
+}
+
+/* background-color: #e53e3e; */
+
+.start__button {
+  color: #edf2f7;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1.5rem 3rem;
+  border-radius: 9999px;
+}
+
+.get__started__button {
+  background-color: #f56565;
+  border: none;
+  margin-right: 2rem;
+  transition: ease 300ms;
+}
+
+.get__started__button:hover {
+  background-color: #e53e3e;
+}
+
+.contact__us__button {
+  background-color: #6415ff;
+  border: 1px solid #a0aec0;
+  transition: ease 300ms;
+}
+
+.contact__us__button:hover {
+  background-color: #edf2f7;
+  color: #6415ff;
+}
+
+
 
 /* 
 
