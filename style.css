@@ -943,12 +943,10 @@ START / CALL TO ACTION ↓
   display: flex;
   border-radius: 0.5rem;
   align-items: center;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
   padding-right: 6rem;
   padding-left: 6rem;
-  /* add min-height for more vertical space, responsive with vh */
-  min-height: 38vh;
 }
 
 .start__text {
@@ -956,7 +954,7 @@ START / CALL TO ACTION ↓
   font-size: 1.875rem;
   font-weight: 700;
   width: 50%;
-  margin-left: 3rem;
+  margin-left: 4rem;
   text-align: left;
 }
 
