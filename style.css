@@ -14,6 +14,7 @@ body {
 }
 
 h1 {
+  color: #1a202c;
   font-size: 3rem;
   line-height: 1.25;
   margin-bottom: 24px;
@@ -216,7 +217,7 @@ header .row {
   text-align: left;
   width: 40%;
   max-width: none;
-  margin-right: auto;
+  /* margin-right: auto; */
 }
 
 .header__figure {
@@ -228,15 +229,14 @@ header .row {
 }
 
 .header__para {
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 1.5;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
 
 .header__bar {
-  max-width: 15rem;
-  /* margin-right: auto; */
+  display: flex;
   position: relative;
   text-align: left;
 }
@@ -267,22 +267,19 @@ header .row {
   border-radius: 500px;
   border: none;
   z-index: 2;
-  display: flex;
   position: absolute;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
   width: 10rem;
   line-height: 1.25;
-  left: 312px;
-  top: -2px;
-  align-items: center;
 }
 
 .header__customers {
   margin-top: 6rem;
 }
 
-.para__customers {
+.span__customers {
   font-size: 0.75rem;
   font-weight: 700;
   color: #a0aec0;
@@ -290,10 +287,11 @@ header .row {
 }
 
 .image__customers {
-  width: 100%;
+  width: 75%;
   opacity: 0.5;
   margin-top: 1rem;
-  padding-right: 8rem;
+  /* height: auto; */
+  /* padding-right: 8rem; */
 }
 
 /* 
@@ -642,8 +640,6 @@ PRICING ↓
   background: linear-gradient(135deg, #4c51bf 0%, #667eea 100%);
 }
 
-
-
 .plan__highlight {
   position: absolute;
   border-top-right-radius: 0.5rem;
@@ -663,7 +659,7 @@ PRICING ↓
 }
 
 .plan__highlight--enterprise {
-  background: linear-gradient(115deg, #f56565 0%, #feb2b2 100%)
+  background: linear-gradient(115deg, #f56565 0%, #feb2b2 100%);
 }
 
 .plan__type {
@@ -703,7 +699,6 @@ PRICING ↓
   font-size: 3rem;
   font-weight: 700;
 }
-
 
 .plan__monthly {
   color: #a0aec0;
@@ -935,7 +930,6 @@ START / CALL TO ACTION ↓
 #start .row {
   position: relative;
   overflow: hidden;
-  
 }
 
 .start__container {
@@ -996,8 +990,6 @@ START / CALL TO ACTION ↓
   color: #6415ff;
   border: 1px solid #edf2f7;
 }
-
-
 
 /* 
 
@@ -1066,14 +1058,27 @@ footer {
 .anchor__social--link {
   margin-right: 1rem;
   background-color: white;
-  padding: .25rem .4rem;
+  padding: 0.25rem 0.4rem;
   border-radius: 50%;
 }
 
 .social__link--icon {
-  margin-top: .25rem;
+  margin-top: 0.25rem;
   width: 1rem;
-  height: 1rem;
+  height: 0.9rem;
+}
+
+.attributions__container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.attribution__link {
+  color: #f7fafc;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  text-decoration: none;
 }
 
 /* 
@@ -1086,12 +1091,40 @@ MOBILE RESPONSIVENESS ↓
   header .row {
     align-items: flex-end;
   }
+  h1 {
+    font-size: 2.25rem;
+  }
+  .header__para {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 1024px) {
   .btn__menu {
     display: block;
   }
+  .nav__link--list {
+    display: none;
+  }
+  h1 {
+    font-size: 1.875rem;
+    margin-bottom: 0;
+  }
+  .header__container {
+    width: 55%;
+    text-align: center;
+  }
+  .header__customers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3rem;
+    text-align: center;
+  }
+  .span__customers {
+    font-size: 0.875rem;
+  }
+
   header .row {
     flex-direction: column;
     align-items: center;
