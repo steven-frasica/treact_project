@@ -215,7 +215,7 @@ header .row {
   display: flex;
   flex-direction: column;
   text-align: left;
-  width: 40%;
+  width: 45%;
   max-width: none;
   /* margin-right: auto; */
 }
@@ -239,6 +239,7 @@ header .row {
   display: flex;
   position: relative;
   text-align: left;
+  max-width: 28rem;
 }
 
 .header__input {
@@ -290,8 +291,6 @@ header .row {
   width: 75%;
   opacity: 0.5;
   margin-top: 1rem;
-  /* height: auto; */
-  /* padding-right: 8rem; */
 }
 
 /* 
@@ -1094,8 +1093,14 @@ MOBILE RESPONSIVENESS ↓
   h1 {
     font-size: 2.25rem;
   }
+  .header__figure {
+    width: 45%;
+  }
   .header__para {
     font-size: 1rem;
+  }
+  .image__customers {
+    width: 100%;
   }
 }
 
@@ -1109,26 +1114,42 @@ MOBILE RESPONSIVENESS ↓
   h1 {
     font-size: 1.875rem;
     margin-bottom: 0;
+    text-align: center;
+  }
+  .header__para {
+    text-align: center;
   }
   .header__container {
     width: 55%;
-    text-align: center;
+    align-items: center;
   }
   .header__customers {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     margin-top: 3rem;
-    text-align: center;
   }
+
   .span__customers {
     font-size: 0.875rem;
   }
-
+  .header__figure {
+    width: 70%;
+  }
+  .image__customers {
+    width: 100%;
+  }
   header .row {
     flex-direction: column;
     align-items: center;
   }
+  .features__container {
+    width: 75%;
+  }
+  .feature {
+    width: calc(100% / 2);
+  }
+
   footer {
     padding: 80px 32px;
   }
@@ -1147,6 +1168,18 @@ MOBILE RESPONSIVENESS ↓
   #pricing .row {
     margin-top: 40px;
   }
+  .features__container {
+    width: 60%;
+  }
+  .feature {
+    width: 100%;
+  }
+  .feature__span--para {
+    width: 85%;
+  }
+  #features h2 {
+    text-align: center;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1157,7 +1190,39 @@ MOBILE RESPONSIVENESS ↓
     margin: 8px 0;
     padding-bottom: 4px;
   }
-  main {
+  .header__bar {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+  .header__input {
+    width: 100%;
+    padding: 16px 0;
+    margin: 16px 0;
+  }
+  .header__button {
+    width: 100%;
+    padding: 16px 0;
+    margin: 16px 0;
+    position: static;
+  }
+  #features h2 {
+    font-size: 2.25rem;
+  }
+  .feature {
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature__span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  }
+  .feature__figure {
+    margin-left: 1.5rem;
+  }
+   main {
     margin-bottom: 80px;
   }
 }
