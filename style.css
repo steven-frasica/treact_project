@@ -1149,7 +1149,21 @@ MOBILE RESPONSIVENESS ↓
   .feature {
     width: calc(100% / 2);
   }
-
+  #quality h2 {
+    font-size: 2.25rem;
+  }
+  .quality__figure {
+    width: 50%;
+  }
+  .quality__container {
+    margin-right: 2rem;
+  }
+  .quality__para {
+    font-size: 1rem;
+  }
+  #values h2 {
+    font-size: 2.25rem;
+  }
   footer {
     padding: 80px 32px;
   }
@@ -1179,6 +1193,90 @@ MOBILE RESPONSIVENESS ↓
   }
   #features h2 {
     text-align: center;
+  }
+  .quality__figure {
+    width: 60%;
+  }
+  .quality__container {
+    text-align: center;
+    align-items: center;
+    width: 60%;
+    margin-right: 0;
+  }
+  .quality__button {
+    align-self: auto;
+  }
+  .quality__para {
+    font-size: 0.875rem;
+    text-align: center;
+  }
+  .steps__container {
+    align-self: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 4rem;
+    margin-left: 0;
+  }
+  #steps h2 {
+    font-size: 2.25rem;
+  }
+  .steps__figure {
+    width: 60%;
+  }
+  .steps__list {
+    align-self: auto;
+  }
+  .step__list {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .step__text {
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+  .values__container {
+    align-items: center;
+    text-align: center;
+    margin-right: 0rem;
+    /* margin-left: 4rem; */
+    width: 100%;
+  }
+  #values h2 {
+    width: 60%;
+  }
+  .values__para {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: .875rem;
+    width: 62%;
+  }
+  .values__principles {
+    flex-direction: column;
+  }
+  .values__principle--span {
+    width: 50%;
+    margin-right: 1.5rem;
+  }
+  .values__principle:nth-of-type(2) .values__principle--span{
+    margin-top: 2rem;
+    margin-right: 3rem;
+  }
+  .values__principle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .values__principle--para {
+    text-align: center;
+    max-width: 20rem;
+  }
+  .values__figure {
+    width: 60%;
+  }
+  .values__button {
+    align-self: auto;
   }
 }
 
@@ -1214,15 +1312,15 @@ MOBILE RESPONSIVENESS ↓
     align-items: center;
   }
   .feature__span {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
   .feature__figure {
     margin-left: 1.5rem;
   }
-   main {
+  main {
     margin-bottom: 80px;
   }
 }
