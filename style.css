@@ -1164,6 +1164,28 @@ MOBILE RESPONSIVENESS ↓
   #values h2 {
     font-size: 2.25rem;
   }
+  .values__principles {
+    flex-direction: column;
+  }
+  .values__principle--span {
+    width: 50%;
+  }
+  .values__principle:nth-of-type(2) .values__principle--span {
+    margin-top: 2rem;
+  }
+  #pricing h2 {
+    letter-spacing: 0.025em;
+    width: 70%;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .pricing__plans {
+    flex-direction: column;
+  }
+  .pricing__plan {
+    width: 100%;
+    margin-right: 0;
+  }
   footer {
     padding: 80px 32px;
   }
@@ -1319,6 +1341,17 @@ MOBILE RESPONSIVENESS ↓
   }
   .feature__figure {
     margin-left: 1.5rem;
+  }
+  #pricing h2 {
+    font-size: 2.25rem;
+    width: 100%;
+  }
+  .pricing__para {
+    font-size: .875rem;
+  }
+  .pricing__plan {
+    /* width: 68%; */
+    /* margin-right: 0; */
   }
   main {
     margin-bottom: 80px;
