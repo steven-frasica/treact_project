@@ -1445,6 +1445,12 @@ MOBILE RESPONSIVENESS ↓
       text-align: center;
       margin-left: 0;
     }
+    #quality h2 {
+      font-size: 1.875rem;
+    }
+    .quality__figure {
+      width: 75%;
+    }
     #pricing h2 {
       font-size: 2.25rem;
       width: 100%;
@@ -1473,3 +1479,14 @@ MOBILE RESPONSIVENESS ↓
     }
   }
 
+/* TO DO!!! */
+
+/* fix figure width in values section
+at 640px bp, thanks!
+
+
+
+
+
+
+*/
