@@ -1019,7 +1019,6 @@ footer {
   color: #f7fafc;
   font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 1rem;
 }
 
 .link__list--item {
@@ -1034,6 +1033,18 @@ footer {
   justify-content: space-between;
   align-items: center;
   margin-top: 8rem;
+}
+
+.footer__info::before {
+  content: "";
+  align-items: center;
+  position: absolute;
+  top: 21rem;
+  text-align: center;
+  width: 60%;
+  height: 0;
+  border-top: 2px solid #7636f4;
+  padding-right: 22rem;
 }
 
 .footer__logo {
@@ -1357,6 +1368,14 @@ MOBILE RESPONSIVENESS ↓
     align-self: flex-start;
     margin-left: 8rem;
   }
+  .link__lists {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .link__list__container {
+    width: calc(100% / 3);
+    margin-top: 2rem;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1409,10 +1428,6 @@ MOBILE RESPONSIVENESS ↓
   }
   .pricing__para {
     font-size: 0.875rem;
-  }
-  .pricing__plan {
-    /* width: 68%; */
-    /* margin-right: 0; */
   }
   main {
     margin-bottom: 80px;
