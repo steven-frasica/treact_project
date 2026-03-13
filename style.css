@@ -20,6 +20,21 @@ h1 {
   margin-bottom: 24px;
 }
 
+.header__blob {
+  pointer-events: none;
+  position: absolute;
+  left: -8rem;
+  bottom: 12rem;
+  z-index: -10;
+  height: 16rem;
+  width: 16rem;
+  --tw-translate-x: -66.67%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: 0.05;
+}
+
 h2 {
   font-size: 3rem;
   font-weight: 900;
@@ -370,7 +385,17 @@ FEATURES ↓
   line-height: 2;
   margin-top: 1rem;
   margin-bottom: 3rem;
+  padding: 0 1rem;
   color: #7c8ba1;
+}
+
+.features__blob {
+  pointer-events: none;
+  position: absolute;
+  right: -6rem;
+  bottom: -9rem;
+  width: 16rem;
+  opacity: 0.25;
 }
 /* 
 
@@ -406,6 +431,7 @@ QUALITY WORK ↓
 .quality__figure {
   width: 50%;
   flex-shrink: 0;
+  position: relative;
 }
 
 .quality__image {
@@ -429,9 +455,22 @@ QUALITY WORK ↓
   align-self: flex-start;
 }
 
+.quality__dots {
+  position: absolute;
+  right: -2.5rem;
+  bottom: -2.25rem;
+  z-index: -10;
+  height: 5rem;
+  width: 5rem;
+  /* fill: #6415ff; */
+  fill: #6415ff;
+  /* margin-top: 10rem; */
+  /* padding-top: 20rem; */
+}
+
 /* 
 
-STEPS ↓
+STEPS 
 
 */
 
@@ -460,6 +499,23 @@ STEPS ↓
 .steps__image {
   height: auto;
   max-width: 100%;
+}
+
+.steps__dots {
+  position: absolute;
+  right: 17.5rem;
+  bottom: -2.25rem;
+  z-index: -10;
+  height: 5rem;
+  width: 5rem;
+  --tw-translate-x: 50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-translate-y: 50%;
+  fill: rgb(100, 21, 255);
+  --tw-text-opacity: 1;
+  opacity: 0.15;
 }
 
 .steps__list {
@@ -502,6 +558,7 @@ STEPS ↓
   margin-top: 0.75rem;
   max-width: 20rem;
 }
+
 
 /* 
 
@@ -629,6 +686,7 @@ PRICING ↓
   padding-top: 0.5rem;
   position: relative;
   max-width: 24rem;
+  opacity: 1;
   box-shadow:
     0 1px 3px 0 rgba(0, 0, 0, 0.1),
     0 1px 2px 0 rgba(0, 0, 0, 0.06);
@@ -806,6 +864,22 @@ PRICING ↓
   background: linear-gradient(115deg, #f56565 0%, #feb2b2 100%);
 }
 
+.pricing__blob {
+  pointer-events: none;
+  position: absolute;
+  left: 10.5rem;
+  bottom: -257rem;
+  z-index: -30;
+  height: 16rem;
+  width: 16rem;
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-translate-y: 50%;
+  opacity: 0.25;
+}
+
 /* ***** TO DO ***** */
 /* margin-top of pricing plans, margin-right? of pricing plan, align items center, pretty much entire plan column, colors, font sizes, button design, individualized text */
 
@@ -916,6 +990,24 @@ TESTIMONIALS ↓
 .testimonial__user--title {
   color: #7c8ba1;
   font-weight: 500;
+}
+
+.testimonial__blob {
+  pointer-events: none;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: -20;
+  height: 14rem;
+  width: 14rem;
+  --tw-translate-x: 66.67%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-translate-y: -3rem;
+  --tw-text-opacity: 1;
+  fill: rgb(79 209 197);
+  opacity: 0.15;
 }
 
 /* 
@@ -1403,81 +1495,81 @@ MOBILE RESPONSIVENESS ↓
   }
 }
 
-  @media (max-width: 640px) {
-    .container {
-      padding: 80px 0;
-    }
-    .nav__logo {
-      margin: 8px 0;
-      padding-bottom: 4px;
-    }
-    .header__bar {
-      flex-direction: column;
-      height: auto;
-      width: 100%;
-    }
-    .header__input {
-      width: 100%;
-      padding: 16px;
-      margin: 16px 0;
-    }
-    .header__button {
-      width: 100%;
-      padding: 16px 0;
-      margin: 16px 0;
-      position: static;
-    }
-    .header__customers {
-      width: 160%;
-      margin-top: 0;
-    }
-    #features h2 {
-      font-size: 2.25rem;
-    }
-    .feature {
-      flex-direction: column;
-      align-items: center;
-    }
-    .feature__span {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      margin-left: 0;
-    }
-    #quality h2 {
-      font-size: 1.875rem;
-    }
-    .quality__figure {
-      width: 75%;
-    }
-    #pricing h2 {
-      font-size: 2.25rem;
-      width: 100%;
-    }
-    .pricing__para {
-      font-size: 0.875rem;
-    }
-    .start__container {
-      padding-top: 5rem;
-      padding-bottom: 6rem;
-    }
-    .start__text {
-      font-size: 1.5rem;
-      width: 100%;
-    }
-    .start__button {
-      font-size: 0.875rem;
-      padding: 0.75rem 1.5rem;
-    }
-    .get__started__button {
-      margin-right: 0;
-      margin-bottom: 1rem;
-    }
-    main {
-      margin-bottom: 80px;
-    }
+@media (max-width: 640px) {
+  .container {
+    padding: 80px 0;
   }
+  .nav__logo {
+    margin: 8px 0;
+    padding-bottom: 4px;
+  }
+  .header__bar {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+  .header__input {
+    width: 100%;
+    padding: 16px;
+    margin: 16px 0;
+  }
+  .header__button {
+    width: 100%;
+    padding: 16px 0;
+    margin: 16px 0;
+    position: static;
+  }
+  .header__customers {
+    width: 160%;
+    margin-top: 0;
+  }
+  #features h2 {
+    font-size: 2.25rem;
+  }
+  .feature {
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature__span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+  }
+  #quality h2 {
+    font-size: 1.875rem;
+  }
+  .quality__figure {
+    width: 75%;
+  }
+  #pricing h2 {
+    font-size: 2.25rem;
+    width: 100%;
+  }
+  .pricing__para {
+    font-size: 0.875rem;
+  }
+  .start__container {
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+  }
+  .start__text {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  .start__button {
+    font-size: 0.875rem;
+    padding: 0.75rem 1.5rem;
+  }
+  .get__started__button {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  main {
+    margin-bottom: 80px;
+  }
+}
 
 /* TO DO!!! */
 
