@@ -503,11 +503,11 @@ STEPS
 
 .steps__dots {
   position: absolute;
-  right: 17.5rem;
-  bottom: -2.25rem;
+  right: 15rem;
+  bottom: -4.75rem;
   z-index: -10;
-  height: 5rem;
-  width: 5rem;
+  height: 10rem;
+  width: 10rem;
   --tw-translate-x: 50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y))
     rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
@@ -673,6 +673,7 @@ PRICING ↓
 
 .pricing__plan {
   display: flex;
+  background: white;
   flex-direction: column;
   text-align: center;
   /* border: 1px solid #e2e8f0; */
@@ -995,8 +996,8 @@ TESTIMONIALS ↓
 .testimonial__blob {
   pointer-events: none;
   position: absolute;
-  right: 0px;
-  top: 0px;
+  right: -7rem;
+  top: 355rem;
   z-index: -20;
   height: 14rem;
   width: 14rem;
@@ -1573,8 +1574,7 @@ MOBILE RESPONSIVENESS ↓
 
 /* TO DO!!! */
 
-/* fix figure width in values section
-at 640px bp, thanks!
+/* fix pricing blob on left side. Add rest of blobs
 
 
 
