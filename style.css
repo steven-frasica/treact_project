@@ -649,6 +649,7 @@ PRICING ↓
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .pricing__para {
@@ -1859,6 +1860,13 @@ MOBILE RESPONSIVENESS ↓
 
 /* FAQS */
 
+#faqs .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
 .questions__container {
   background: rgb(247 250 252);
   border-radius: 0.5rem;
@@ -1934,11 +1942,11 @@ MOBILE RESPONSIVENESS ↓
   text-align: center;
 }
 
-.fpEzNf {
+.faqs__blob {
   pointer-events: none;
   position: absolute;
-  left: -8.5rem;
-  bottom: -375rem;
+  left: -24.5rem;
+  bottom: -6.5rem;
   z-index: -20;
   height: 16rem;
   width: 16rem;
