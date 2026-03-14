@@ -1286,6 +1286,29 @@ footer {
   z-index: 10;
 }
 
+.link__list--item a {
+  display: inline-block;
+  font-weight: 500;
+  color: #f7fafc;
+  text-decoration: none;
+  transition: transform 220ms ease, opacity 220ms ease;
+}
+
+.link__list--item a:hover {
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+  opacity: 0.9;
+}
+
+.link__list--item a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+  opacity: 0.9;
+}
+
 .footer__info {
   display: flex;
   justify-content: space-between;
