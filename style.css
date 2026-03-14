@@ -86,7 +86,8 @@ nav {
   padding-top: 32px;
 }
 
-.nav__row {
+.nav__row,
+.link__lists {
   display: flex;
   justify-content: space-between;
 }
@@ -322,7 +323,8 @@ FEATURES ↓
   justify-content: center;
 }
 
-.features__para {
+.features__para,
+.pricing__para {
   color: #7c8ba1;
   font-size: 1.125rem;
   font-weight: 500;
@@ -404,7 +406,8 @@ QUALITY WORK ↓
   align-items: center;
 }
 
-.quality__container {
+.quality__container,
+.values__container {
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -413,7 +416,8 @@ QUALITY WORK ↓
   padding-bottom: 2rem;
 }
 
-.quality__para {
+.quality__para,
+.values__para {
   color: #7c8ba1;
   font-size: 1.125rem;
   font-weight: 500;
@@ -566,25 +570,6 @@ VALUES ↓
   align-items: center;
 }
 
-.values__container {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  margin-right: 4rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.values__para {
-  color: #7c8ba1;
-  font-size: 1.125rem;
-  font-weight: 500;
-  margin-top: 1rem;
-  max-width: 36rem;
-  text-align: left;
-  line-height: 1.625;
-}
-
 .values__button {
   text-decoration: none;
   font-weight: 700;
@@ -615,7 +600,8 @@ VALUES ↓
   justify-content: space-around;
 }
 
-.values__principle--span {
+.values__principle--span,
+.testimonial__user--main {
   display: flex;
   align-items: center;
 }
@@ -650,15 +636,6 @@ PRICING ↓
   flex-direction: column;
   align-items: center;
 
-}
-
-.pricing__para {
-  color: #7c8ba1;
-  font-size: 1.125rem;
-  font-weight: 500;
-  margin-top: 2rem;
-  max-width: 36rem;
-  text-align: center;
 }
 
 .pricing__plans {
@@ -703,7 +680,8 @@ PRICING ↓
   height: 0.5rem;
 }
 
-.plan__highlight--personal {
+.plan__highlight--personal,
+.plan__button--personal {
   background: linear-gradient(
     115deg,
     rgb(56, 178, 172) 0%,
@@ -711,7 +689,8 @@ PRICING ↓
   );
 }
 
-.plan__highlight--enterprise {
+.plan__highlight--enterprise,
+.plan__button--enterprise {
   background: linear-gradient(115deg, #f56565 0%, #feb2b2 100%);
 }
 
@@ -828,21 +807,9 @@ PRICING ↓
   white-space: nowrap;
 }
 
-.plan__button--personal {
-  background: linear-gradient(
-    115deg,
-    rgb(56, 178, 172) 0%,
-    rgb(129, 230, 217) 100%
-  );
-}
-
 .plan__button--business {
   background: white;
   color: #6415ff;
-}
-
-.plan__button--enterprise {
-  background: linear-gradient(115deg, #f56565 0%, #feb2b2 100%);
 }
 
 .pricing__blob {
@@ -1100,11 +1067,6 @@ TESTIMONIALS ↓
   width: 100%;
 }
 
-.testimonial__user--main {
-  display: flex;
-  align-items: center;
-}
-
 .testimonial__user--figure {
   margin-top: 2rem;
 }
@@ -1304,11 +1266,6 @@ footer {
   margin-bottom: -32px;
   position: relative;
   overflow: hidden;
-}
-
-.link__lists {
-  display: flex;
-  justify-content: space-between;
 }
 
 .link__list__container {
