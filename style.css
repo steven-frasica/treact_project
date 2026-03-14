@@ -209,11 +209,6 @@ nav {
   margin-right: 0.75rem;
 }
 
-.nav__logo-name {
-  font-size: 1.5rem;
-  font-weight: 900;
-}
-
 /* 
 
 HEADER / ABOUT US ↓
@@ -784,22 +779,6 @@ PRICING ↓
   flex-wrap: nowrap;
 }
 
-.plan__features--business {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  border-color: #e2e8f0;
-  border-style: solid;
-  border-top-width: 2px;
-  border-bottom-width: 2px;
-  border-left-width: 0px;
-  border-right-width: 0px;
-  padding: 3rem;
-  margin-left: -1.5rem;
-  margin-right: -1.5rem;
-  flex-wrap: nowrap;
-}
-
 .plan__features--title {
   font-size: 1.25rem;
   font-weight: 700;
@@ -915,9 +894,139 @@ TESTIMONIALS ↓
   margin-top: -3.5rem;
 }
 
+.testimonials__slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.testimonial__state {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.testimonials__viewport {
+  position: relative;
+  min-height: 30rem;
+}
+
 .testimonial {
   display: flex;
   flex-direction: column;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(0);
+}
+
+#testimonial-state-charlotte:checked ~ .testimonials__viewport .testimonial--charlotte,
+#testimonial-state-charlotte-left:checked ~ .testimonials__viewport .testimonial--charlotte,
+#testimonial-state-charlotte-right:checked ~ .testimonials__viewport .testimonial--charlotte {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#testimonial-state-adam-left:checked ~ .testimonials__viewport .testimonial--adam,
+#testimonial-state-adam-right:checked ~ .testimonials__viewport .testimonial--adam {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@keyframes testimonial-in-from-left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes testimonial-in-from-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes testimonial-out-to-left {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes testimonial-out-to-right {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+/* Left arrow: current slide exits right, next enters from left */
+#testimonial-state-adam-left:checked ~ .testimonials__viewport .testimonial--charlotte {
+  opacity: 1;
+  pointer-events: none;
+  animation: testimonial-out-to-right 450ms ease forwards;
+}
+
+#testimonial-state-adam-left:checked ~ .testimonials__viewport .testimonial--adam {
+  opacity: 1;
+  pointer-events: auto;
+  animation: testimonial-in-from-left 450ms ease forwards;
+}
+
+#testimonial-state-charlotte-left:checked ~ .testimonials__viewport .testimonial--adam {
+  opacity: 1;
+  pointer-events: none;
+  animation: testimonial-out-to-right 450ms ease forwards;
+}
+
+#testimonial-state-charlotte-left:checked ~ .testimonials__viewport .testimonial--charlotte {
+  opacity: 1;
+  pointer-events: auto;
+  animation: testimonial-in-from-left 450ms ease forwards;
+}
+
+/* Right arrow: current slide exits left, next enters from right */
+#testimonial-state-adam-right:checked ~ .testimonials__viewport .testimonial--charlotte {
+  opacity: 1;
+  pointer-events: none;
+  animation: testimonial-out-to-left 450ms ease forwards;
+}
+
+#testimonial-state-adam-right:checked ~ .testimonials__viewport .testimonial--adam {
+  opacity: 1;
+  pointer-events: auto;
+  animation: testimonial-in-from-right 450ms ease forwards;
+}
+
+#testimonial-state-charlotte-right:checked ~ .testimonials__viewport .testimonial--adam {
+  opacity: 1;
+  pointer-events: none;
+  animation: testimonial-out-to-left 450ms ease forwards;
+}
+
+#testimonial-state-charlotte-right:checked ~ .testimonials__viewport .testimonial--charlotte {
+  opacity: 1;
+  pointer-events: auto;
+  animation: testimonial-in-from-right 450ms ease forwards;
 }
 
 .testimonial__rating {
@@ -960,6 +1069,13 @@ TESTIMONIALS ↓
 .testimonial__user {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.testimonial__user--main {
+  display: flex;
+  align-items: center;
 }
 
 .testimonial__user--figure {
@@ -986,6 +1102,45 @@ TESTIMONIALS ↓
 .testimonial__user--title {
   color: #7c8ba1;
   font-weight: 500;
+}
+
+.testimonial__controls {
+  position: relative;
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.testimonial__controls::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1px;
+  height: 1.5rem;
+  background: rgb(203 213 224);
+  transform: translate(-50%, -50%);
+}
+
+.testimonial__arrow {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: rgb(226 232 240);
+  color: #6415ff;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 300ms ease;
+}
+
+.testimonial__arrow:hover {
+  background: rgb(203 213 224);
 }
 
 .testimonial__blob {
@@ -1229,7 +1384,7 @@ footer {
 
 .eqOzdE {
   position: absolute;
-  top: -7rem;
+  top: -9rem;
   left: -5rem;
   height: 20rem;
   width: 20rem;
@@ -1375,6 +1530,9 @@ MOBILE RESPONSIVENESS ↓
     width: 45%;
     margin-right: 2rem;
     margin-top: 8rem;
+  }
+  .testimonials__viewport {
+    min-height: 34rem;
   }
   .testimonial__stars {
     width: 45%;
@@ -1528,6 +1686,9 @@ MOBILE RESPONSIVENESS ↓
     margin-top: 0;
     width: 60%;
   }
+  .testimonials__viewport {
+    min-height: 40rem;
+  }
   .testimonial__rating {
     width: 35%;
   }
@@ -1544,8 +1705,17 @@ MOBILE RESPONSIVENESS ↓
     width: 64%;
   }
   .testimonial__user {
-    align-self: flex-start;
-    margin-left: 8rem;
+    align-self: center;
+    margin-left: 0;
+    width: 64%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .testimonial__user--main {
+    justify-content: center;
+  }
+  .testimonial__controls {
+    margin-top: 1rem;
   }
   .link__lists {
     flex-wrap: wrap;
@@ -1618,6 +1788,9 @@ MOBILE RESPONSIVENESS ↓
   .quality__figure {
     width: 75%;
   }
+  .testimonials__viewport {
+    min-height: 44rem;
+  }
   .steps__dots {
     height: 3.25rem;
     width: 3.25rem;
@@ -1650,12 +1823,85 @@ MOBILE RESPONSIVENESS ↓
   }
 }
 
-/* TO DO!!! */
 
-/* fix pricing blob on left side. Add rest of blobs
+/* FAQS */
 
+.questions__container {
+  background: rgb(247 250 252);
+  border-radius: 0.5rem;
+  border: 1px solid rgb(226 232 240);
+  margin-top: 1rem;
+  width: 69%;
+  text-align: left;
+  padding: 1.25rem 1.5rem;
+}
 
+.question__button {
+  list-style: none;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2d3748;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.question__button::-webkit-details-marker {
+  display: none;
+}
+
+.question__button::after {
+  content: "";
+  display: inline-block;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-right: 2.5px solid #2d3748;
+  border-bottom: 2.5px solid #2d3748;
+  margin-left: 1rem;
+  transform: rotate(45deg) translateY(-1px);
+  transition: transform 450ms ease;
+}
+
+.answer__para {
+  color: black;
+  font-size: 1rem;
+  line-height: 1.625;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  margin-top: 0;
+  transition: max-height 300ms ease, opacity 300ms ease, margin-top 300ms ease;
+}
+
+.questions__container[open] {
+  background: rgb(237 242 247);
+}
+
+.questions__container[open] .question__button::after {
+  transform: rotate(-135deg) translateY(-1px);
+}
+
+.questions__container[open] .answer__para {
+  max-height: 12rem;
+  opacity: 1;
+  margin-top: 1rem;
+}
+
+.question__para {
+  color: #7c8ba1;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  max-width: 36rem;
+  text-align: center;
+}
+
+/* TO DO
+add one last purple blob by FAQS
+create FAQS
+Read over AI built code 
 
 
 
