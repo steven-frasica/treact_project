@@ -228,7 +228,6 @@ header .row {
   text-align: left;
   width: 45%;
   max-width: none;
-  /* margin-right: auto; */
 }
 
 .header__figure {
@@ -461,10 +460,9 @@ QUALITY WORK ↓
   z-index: -10;
   height: 5rem;
   width: 5rem;
-  /* fill: #6415ff; */
+
   fill: #6415ff;
-  /* margin-top: 10rem; */
-  /* padding-top: 20rem; */
+
 }
 
 /* 
@@ -475,7 +473,7 @@ STEPS
 
 #steps .row {
   display: flex;
-  /* justify-content: space-around; */
+
   align-items: center;
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -824,11 +822,9 @@ PRICING ↓
 }
 
 /* ***** TO DO ***** */
-/* margin-top of pricing plans, margin-right? of pricing plan, align items center, pretty much entire plan column, colors, font sizes, button design, individualized text */
-
 /* 
 
-TESTIMONIALS ↓
+TESTIMONIALS
 
 */
 
@@ -1188,8 +1184,6 @@ START / CALL TO ACTION ↓
   text-align: center;
 }
 
-/* background-color: #e53e3e; */
-
 .start__button {
   color: #edf2f7;
   font-size: 1rem;
@@ -1221,7 +1215,7 @@ START / CALL TO ACTION ↓
   border: 1px solid #edf2f7;
 }
 
-.gidxtt {
+.start__circle--blob {
   position: absolute;
   bottom: -6rem;
   left: -7rem;
@@ -1233,12 +1227,12 @@ START / CALL TO ACTION ↓
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   --tw-translate-y: 8rem;
   --tw-text-opacity: 1;
-  color: rgb(80 17 204);
-  opacity: 0.2;
+  fill: rgb(80 17 204);
+  opacity: 0.3;
   z-index: 0;
 }
 
-.kFtFRr {
+.start__circle--blob--top {
   position: absolute;
   top: -16rem;
   right: -5rem;
@@ -1356,7 +1350,7 @@ footer {
   text-decoration: none;
 }
 
-.bbIulZ {
+.footer__circle--bottom {
   position: absolute;
   bottom: -11rem;
   right: -8rem;
@@ -1372,7 +1366,7 @@ footer {
   opacity: 0.2;
 }
 
-.eqOzdE {
+.footer__circle--top {
   position: absolute;
   top: -9rem;
   left: -5rem;
@@ -1443,7 +1437,6 @@ MOBILE RESPONSIVENESS ↓
     width: 105%;
     min-width: 105%;
   }
-
   .span__customers {
     font-size: 0.875rem;
   }
@@ -1564,6 +1557,10 @@ MOBILE RESPONSIVENESS ↓
   }
   #pricing .row {
     margin-top: 40px;
+  }
+  .header__bar {
+    min-width: 0;
+    width: 100%;
   }
   .features__container {
     width: 60%;
@@ -1902,12 +1899,12 @@ MOBILE RESPONSIVENESS ↓
 .faqs__blob {
   pointer-events: none;
   position: absolute;
-  left: -24.5rem;
+  left: calc((100vw - 100%) / -2 - 8rem);
   bottom: -6.5rem;
   z-index: -20;
   height: 16rem;
   width: 16rem;
-  --tw-translate-x: -66.67%;
+  --tw-translate-x: 0;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y))
     rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
