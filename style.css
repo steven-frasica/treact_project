@@ -922,15 +922,25 @@ TESTIMONIALS ↓
   transform: translateX(0);
 }
 
-#testimonial-state-charlotte:checked ~ .testimonials__viewport .testimonial--charlotte,
-#testimonial-state-charlotte-left:checked ~ .testimonials__viewport .testimonial--charlotte,
-#testimonial-state-charlotte-right:checked ~ .testimonials__viewport .testimonial--charlotte {
+#testimonial-state-charlotte:checked
+  ~ .testimonials__viewport
+  .testimonial--charlotte,
+#testimonial-state-charlotte-left:checked
+  ~ .testimonials__viewport
+  .testimonial--charlotte,
+#testimonial-state-charlotte-right:checked
+  ~ .testimonials__viewport
+  .testimonial--charlotte {
   opacity: 1;
   pointer-events: auto;
 }
 
-#testimonial-state-adam-left:checked ~ .testimonials__viewport .testimonial--adam,
-#testimonial-state-adam-right:checked ~ .testimonials__viewport .testimonial--adam {
+#testimonial-state-adam-left:checked
+  ~ .testimonials__viewport
+  .testimonial--adam,
+#testimonial-state-adam-right:checked
+  ~ .testimonials__viewport
+  .testimonial--adam {
   opacity: 1;
   pointer-events: auto;
 }
@@ -980,50 +990,66 @@ TESTIMONIALS ↓
 }
 
 /* Left arrow: current slide exits right, next enters from left */
-#testimonial-state-adam-left:checked ~ .testimonials__viewport .testimonial--charlotte {
+#testimonial-state-adam-left:checked
+  ~ .testimonials__viewport
+  .testimonial--charlotte {
   opacity: 1;
   pointer-events: none;
   animation: testimonial-out-to-right 450ms ease forwards;
 }
 
-#testimonial-state-adam-left:checked ~ .testimonials__viewport .testimonial--adam {
+#testimonial-state-adam-left:checked
+  ~ .testimonials__viewport
+  .testimonial--adam {
   opacity: 1;
   pointer-events: auto;
   animation: testimonial-in-from-left 450ms ease forwards;
 }
 
-#testimonial-state-charlotte-left:checked ~ .testimonials__viewport .testimonial--adam {
+#testimonial-state-charlotte-left:checked
+  ~ .testimonials__viewport
+  .testimonial--adam {
   opacity: 1;
   pointer-events: none;
   animation: testimonial-out-to-right 450ms ease forwards;
 }
 
-#testimonial-state-charlotte-left:checked ~ .testimonials__viewport .testimonial--charlotte {
+#testimonial-state-charlotte-left:checked
+  ~ .testimonials__viewport
+  .testimonial--charlotte {
   opacity: 1;
   pointer-events: auto;
   animation: testimonial-in-from-left 450ms ease forwards;
 }
 
 /* Right arrow: current slide exits left, next enters from right */
-#testimonial-state-adam-right:checked ~ .testimonials__viewport .testimonial--charlotte {
+#testimonial-state-adam-right:checked
+  ~ .testimonials__viewport
+  .testimonial--charlotte {
   opacity: 1;
   pointer-events: none;
   animation: testimonial-out-to-left 450ms ease forwards;
 }
 
-#testimonial-state-adam-right:checked ~ .testimonials__viewport .testimonial--adam {
+#testimonial-state-adam-right:checked
+  ~ .testimonials__viewport
+  .testimonial--adam {
   opacity: 1;
   pointer-events: auto;
   animation: testimonial-in-from-right 450ms ease forwards;
 }
 
-#testimonial-state-charlotte-right:checked ~ .testimonials__viewport .testimonial--adam {
+#testimonial-state-charlotte-right:checked
+  ~ .testimonials__viewport
+  .testimonial--adam {
   opacity: 1;
   pointer-events: none;
   animation: testimonial-out-to-left 450ms ease forwards;
 }
 
-#testimonial-state-charlotte-right:checked ~ .testimonials__viewport .testimonial--charlotte {
+#testimonial-state-charlotte-right:checked
+  ~ .testimonials__viewport
+  .testimonial--charlotte {
   opacity: 1;
   pointer-events: auto;
   animation: testimonial-in-from-right 450ms ease forwards;
@@ -1239,11 +1265,13 @@ START / CALL TO ACTION ↓
   height: 20rem;
   width: 20rem;
   --tw-translate-x: -5rem;
-  transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   --tw-translate-y: 8rem;
   --tw-text-opacity: 1;
   color: rgb(80 17 204);
-  opacity: 0.20;
+  opacity: 0.2;
   z-index: 0;
 }
 
@@ -1254,11 +1282,13 @@ START / CALL TO ACTION ↓
   height: 20rem;
   width: 20rem;
   --tw-translate-x: 5rem;
-  transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   --tw-translate-y: -16rem;
   --tw-text-opacity: 1;
   color: rgb(80 17 204);
-  opacity: 0.20;
+  opacity: 0.2;
 }
 
 /* 
@@ -1375,7 +1405,9 @@ footer {
   height: 20rem;
   width: 20rem;
   --tw-translate-x: 8rem;
-  transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   --tw-translate-y: 12rem;
   --tw-text-opacity: 1;
   color: rgb(80 17 204 / var(--tw-text-opacity));
@@ -1389,7 +1421,9 @@ footer {
   height: 20rem;
   width: 20rem;
   --tw-translate-x: -5rem;
-  transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   --tw-translate-y: -8rem;
   --tw-text-opacity: 1;
   color: rgb(80 17 204 / var(--tw-text-opacity));
@@ -1823,7 +1857,6 @@ MOBILE RESPONSIVENESS ↓
   }
 }
 
-
 /* FAQS */
 
 .questions__container {
@@ -1871,7 +1904,10 @@ MOBILE RESPONSIVENESS ↓
   overflow: hidden;
   opacity: 0;
   margin-top: 0;
-  transition: max-height 300ms ease, opacity 300ms ease, margin-top 300ms ease;
+  transition:
+    max-height 300ms ease,
+    opacity 300ms ease,
+    margin-top 300ms ease;
 }
 
 .questions__container[open] {
@@ -1898,10 +1934,27 @@ MOBILE RESPONSIVENESS ↓
   text-align: center;
 }
 
+.fpEzNf {
+  pointer-events: none;
+  position: absolute;
+  left: -8.5rem;
+  bottom: -375rem;
+  z-index: -20;
+  height: 16rem;
+  width: 16rem;
+  --tw-translate-x: -66.67%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-text-opacity: 1;
+  fill: rgb(100 21 255);
+  opacity: 0.15;
+}
+
 /* TO DO
-add one last purple blob by FAQS
-create FAQS
-Read over AI built code 
+add one last purple blob by FAQS - DONE
+create FAQS - DONE
+Read over AI built code - DONE
 
 
 
