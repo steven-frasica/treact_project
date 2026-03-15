@@ -781,6 +781,7 @@ PRICING ↓
   color: #718096;
   font-weight: 500;
   margin-top: 1.25rem;
+  list-style: none;
 }
 
 .plan__feature--business {
