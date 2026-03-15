@@ -651,7 +651,6 @@ PRICING ↓
   background: white;
   flex-direction: column;
   text-align: center;
-  /* border: 1px solid #e2e8f0; */
   border-radius: 0.5rem;
   margin-right: 2rem;
   /* made the columns equal width */
@@ -825,7 +824,6 @@ PRICING ↓
   opacity: 0.25;
 }
 
-/* ***** TO DO ***** */
 /* 
 
 TESTIMONIALS
@@ -1656,7 +1654,6 @@ MOBILE RESPONSIVENESS ↓
     align-items: center;
     text-align: center;
     margin-right: 0rem;
-    /* margin-left: 4rem; */
     width: 100%;
   }
   #values h2 {
@@ -1948,12 +1945,3 @@ MOBILE RESPONSIVENESS ↓
   fill: rgb(100 21 255);
   opacity: 0.15;
 }
-
-/* TO DO
-add one last purple blob by FAQS - DONE
-create FAQS - DONE
-Read over AI built code - DONE
-
-
-
-*/
