@@ -788,6 +788,7 @@ PRICING ↓
   color: white;
   font-weight: 500;
   margin-top: 1.25rem;
+  list-style: none;
 }
 
 .plan__buy {
