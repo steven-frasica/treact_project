@@ -144,6 +144,10 @@ nav {
   transition: all 300ms ease;
 }
 
+.btn__menu--svg {
+  cursor: pointer;
+}
+
 .btn__menu--svg:hover {
   filter: invert(26%) sepia(94%) saturate(7476%) hue-rotate(261deg)
     brightness(94%) contrast(115%);
@@ -415,8 +419,6 @@ QUALITY WORK
   flex-direction: column;
   text-align: left;
   margin-right: 4rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .quality__para,
@@ -477,10 +479,7 @@ STEPS
 
 #steps .row {
   display: flex;
-
   align-items: center;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
 }
 
 .steps__container {
@@ -644,6 +643,8 @@ PRICING
   display: flex;
   align-items: stretch;
   position: relative;
+  max-width: 90%;
+  justify-content: center;
 }
 
 .pricing__plan {
@@ -755,8 +756,8 @@ PRICING
   border-left-width: 0px;
   border-right-width: 0px;
   padding: 3rem;
-  margin-left: -1.5rem;
-  margin-right: -1.5rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
   flex-wrap: nowrap;
 }
 
@@ -798,6 +799,8 @@ PRICING
 
 .plan__button {
   width: 100%;
+  display: flex;
+  justify-content: center;
   border-radius: 9999px;
   font-size: 0.875rem;
   font-weight: 700;
@@ -1414,9 +1417,7 @@ footer {
 }
 
 /* 
-
 MOBILE RESPONSIVENESS
-
 */
 
 @media (max-width: 1280px) {
@@ -1457,7 +1458,7 @@ MOBILE RESPONSIVENESS
     text-align: center;
   }
   .header__container {
-    width: 55%;
+    width: 75%;
     align-items: center;
   }
   .header__customers {
@@ -1465,7 +1466,7 @@ MOBILE RESPONSIVENESS
     flex-direction: column;
     align-items: center;
     margin-top: 3rem;
-    width: 105%;
+    width: 100%;
     min-width: 105%;
   }
   .span__customers {
@@ -1552,6 +1553,7 @@ MOBILE RESPONSIVENESS
   }
   .testimonial__stars {
     width: 45%;
+    margin-bottom: 1rem;
   }
   .start__container {
     flex-direction: column;
